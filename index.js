@@ -60,4 +60,8 @@ document.getElementById('searchInput').addEventListener('input', (event) =>{
     visualisPokeList(filteredList)
 })
 
+ducument.getElementById('pokemonList').addEventListener('click', (event) =>{
+    
+})
+
 collectPokemon()
