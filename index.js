@@ -85,6 +85,15 @@ function openModule(pokemonDeatils){
     closeButton.addEventListener('click', () =>{
         closeModule(moduleContainer)
     })
+
+    const details = `<h2>${pokemon.name}</h2>
+    <img src="${pokemon.image}" alt="${pokemon.name}">
+    <p>For more Information Visit : ${pokemon.image}</p>`
+
+    moduleContent.innerHTML = details;
+    moduleContent.appendChild(closeButton);
+    moduleContainer.appendChild(moduleContent);
+    document.body.appendChild(moduleContainer);
 }
 
 collectPokemon()
