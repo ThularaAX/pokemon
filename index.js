@@ -52,4 +52,8 @@ document.getElementById('sortButton').addEventListener('click', () =>{
     visualisPokeList(pokemonDataArray)
 })
 
+document.getElementById('searchInput').addEventListener('input', (event) =>{
+
+})
+
 collectPokemon()
