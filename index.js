@@ -57,6 +57,7 @@ document.getElementById('searchInput').addEventListener('input', (event) =>{
     const filteredList = pokemonDataArray.filter(pokemonFilter => {
         return pokemonFilter.name.toLowerCase().includes(searchTerm)
     })
+    visualisPokeList(filteredList)
 })
 
 collectPokemon()
