@@ -37,13 +37,11 @@ function visualisPokeList(dataListOfPoke){
 }
 
 document.getElementById('sortButton').addEventListener('click', () =>{
-    // console.log("clicked")
     pokemonDataArray.sort((first,next) => {
         const firstName = first.name.toUpperCase()
         const nextName = next.name.toUpperCase()
 
         if(firstName < nextName) {
-            console.log("clicked")
             return -1
         }
         if(nextName > firstName) {
