@@ -96,4 +96,8 @@ function openModule(pokemonDeatils){
     document.body.appendChild(moduleContainer);
 }
 
+function closeModule(moduleContainer) {
+    document.body.removeChild(moduleContainer);
+}
+
 collectPokemon()
