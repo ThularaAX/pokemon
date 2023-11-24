@@ -17,11 +17,12 @@ async function collectPokemon() {
 }
 
 function visualisPokeList(dataListOfPoke){
-    dataListOfPoke.forEach(PokemonData =>{
-        const ul = document.querySelector('ul')
-        const li = document.createElement('li')
-        li.innerText = PokemonData.name
-        ul.append(li)
+    const ul = document.getElementById('pokemonList')
+    ul.innerHTML = ''
+
+    dataListOfPoke.forEach(pokemonData =>{
+        const pokemonCard = document.createElement('div')
+        pokemonCard.className = 'poke_card'
     })
 }
 
