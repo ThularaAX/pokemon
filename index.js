@@ -23,6 +23,12 @@ function visualisPokeList(dataListOfPoke){
     dataListOfPoke.forEach(pokemonData =>{
         const pokemonCard = document.createElement('div')
         pokemonCard.className = 'poke_card'
+
+        const pokemonImg = document.createElement('img')
+        pokemonImg.src = pokemonData.image
+
+        pokemonCard.appendChild(pokemonImg)
+        ul.appendChild(pokemonCard)
     })
 }
 
