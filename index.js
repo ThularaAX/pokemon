@@ -71,4 +71,17 @@ ducument.getElementById('pokemonList').addEventListener('click', (event) =>{
     }
 })
 
+function openModule(pokemonDeatils){
+    const moduleContainer = document.createElement('div')
+    moduleContainer.className = 'module'
+
+    const moduleContent = document.createElement('div')
+    moduleContent.className = 'module-content'
+
+    const closeButton = document.createElement('span')
+    closeButton.className = 'close-button'
+    closeButton.innerHTML = '&times'
+    
+}
+
 collectPokemon()
