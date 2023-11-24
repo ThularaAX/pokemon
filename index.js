@@ -53,7 +53,10 @@ document.getElementById('sortButton').addEventListener('click', () =>{
 })
 
 document.getElementById('searchInput').addEventListener('input', (event) =>{
-
+    const searchTerm = event.target.value.toLowerCase()
+    const filteredList = pokemonDataArray.filter(pokemonFilter => {
+        return pokemonFilter.name.toLowerCase().includes(searchTerm)
+    })
 })
 
 collectPokemon()
