@@ -81,7 +81,10 @@ function openModule(pokemonDeatils){
     const closeButton = document.createElement('span')
     closeButton.className = 'close-button'
     closeButton.innerHTML = '&times'
-    
+
+    closeButton.addEventListener('click', () =>{
+        closeModule(moduleContainer)
+    })
 }
 
 collectPokemon()
