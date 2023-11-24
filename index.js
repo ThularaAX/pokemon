@@ -26,9 +26,13 @@ function visualisPokeList(dataListOfPoke){
 
         const pokemonImg = document.createElement('img')
         pokemonImg.src = pokemonData.image
+        pokemonImg.alt = pokemonData.name
 
-        pokemonCard.appendChild(pokemonImg)
-        ul.appendChild(pokemonCard)
+        const pokemonName = document.createElement('h3')
+        pokemonName.innerHTML = pokemonData.name
+
+        pokemonCard.append(pokemonImg,pokemonName)
+        ul.append(pokemonCard)
     })
 }
 
