@@ -8,5 +8,8 @@ Manly, there are three .addEventListener
 1. To Search the data
 2. Sort the data
 3. View selected data in Module/modal box
-
 Also I have used .forEach(), .sort(), .toLowerCase(), .filter() methods
+
+Therefore, Anyone can view the Pokemon Api data, Search the data, Sort the data and also view the selected data in a Modal Box
+
+Thank you and Enjoy!
