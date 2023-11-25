@@ -60,7 +60,7 @@ document.getElementById('searchInput').addEventListener('input', (event) =>{
     visualisPokeList(filteredList)
 })
 
-ducument.getElementById('pokemonList').addEventListener('click', (event) =>{
+document.getElementById('pokemonList').addEventListener('click', (event) =>{
     if(event.target.classList.contains('card')){
         const clickedPokemonName = event.target.querySelector('h3').innerText
         const clickedPokemon = pokemonDataArray.find(pokemon => pokemon.name == clickedPokemonName)
