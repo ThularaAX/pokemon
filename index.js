@@ -22,7 +22,7 @@ function visualisPokeList(dataListOfPoke){
 
     dataListOfPoke.forEach(pokemonData =>{
         const pokemonCard = document.createElement('div')
-        pokemonCard.className = 'poke_card'
+        pokemonCard.className = 'card'
 
         const pokemonImg = document.createElement('img')
         pokemonImg.src = pokemonData.image
@@ -61,12 +61,14 @@ document.getElementById('searchInput').addEventListener('input', (event) =>{
 })
 
 document.getElementById('pokemonList').addEventListener('click', (event) =>{
-    if(event.target.classList.contains('card')){
-        const clickedPokemonName = event.target.querySelector('h3').innerText
-        const clickedPokemon = pokemonDataArray.find(pokemon => pokemon.name == clickedPokemonName)
+    console.log("clicked 1")
+    if (event.target.classList.contains('card')) {
+        const clickedPokemonName = event.target.querySelector('h3').innerText;
+        const clickedPokemon = pokemonDataArray.find(pokemon => pokemon.name === clickedPokemonName);
 
-        if(clickedPokemon){
-            openModule(clickedPokemon)
+        if (clickedPokemon) {
+            console.log("clikced")
+            openModule(clickedPokemon);
         }
     }
 })
@@ -86,9 +88,9 @@ function openModule(pokemonDeatils){
         closeModule(moduleContainer)
     })
 
-    const details = `<h2>${pokemon.name}</h2>
-    <img src="${pokemon.image}" alt="${pokemon.name}">
-    <p>For more Information Visit : ${pokemon.image}</p>`
+    const details = `<h2>${pokemonDeatils.name}</h2>
+    <img src="${pokemonDeatils.image}" alt="${pokemonDeatils.name}">
+    <p>For more Information Visit : ${pokemonDeatils.image}</p>`
 
     moduleContent.innerHTML = details;
     moduleContent.appendChild(closeButton);
